@@ -158,5 +158,11 @@ void MainWindow::on_closeMyComBtn_clicked()
 
 void MainWindow::on_sendMsgBtn_clicked()
 {
-    myCom->write(ui->sendMsgLineEdit->text().toLocal8Bit()+"\n\r");
+    if(ui->option->currentText() == tr("None Mode"))
+
+        myCom->write(ui->sendMsgLineEdit->text().toLocal8Bit());
+
+    else if(ui->option->currentText() == tr("Enter Mode"))
+
+            myCom->write(ui->sendMsgLineEdit->text().toLocal8Bit()+"\n\r");
 }

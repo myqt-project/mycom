@@ -55,7 +55,7 @@
      <rect>
       <x>30</x>
       <y>290</y>
-      <width>201</width>
+      <width>191</width>
       <height>20</height>
      </rect>
     </property>
@@ -63,9 +63,9 @@
    <widget class="QPushButton" name="sendMsgBtn">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>340</x>
       <y>290</y>
-      <width>111</width>
+      <width>101</width>
       <height>23</height>
      </rect>
     </property>
@@ -308,6 +308,26 @@
     <property name="text">
      <string>停止位</string>
     </property>
+   </widget>
+   <widget class="QComboBox" name="option">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>290</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>None Mode</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Enter Mode</string>
+     </property>
+    </item>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
