@@ -158,5 +158,5 @@ void MainWindow::on_closeMyComBtn_clicked()
 
 void MainWindow::on_sendMsgBtn_clicked()
 {
-    myCom->write(ui->sendMsgLineEdit->text().toLocal8Bit());
+    myCom->write(ui->sendMsgLineEdit->text().toLocal8Bit()+"\n\r");
 }
